@@ -1,0 +1,181 @@
+/* font import==> font-family: 'Signika', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Signika:wght@300;400;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* SCROLL BAR STYLE */
+::-webkit-scrollbar {
+  width: 10px;
+  /* display: none; */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #303952;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #e84393;
+}
+
+/* bg-color COLORS BOX */
+.main-bg-dark {
+  background-color: #2d3436;
+}
+.mai-dark {
+  color: #2d3436;
+}
+.main-bg-pink {
+  background: #e84393;
+}
+.main-pink {
+  color: #e84393;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background: #303952;
+  font-family: "Signika", sans-serif;
+  position: relative;
+}
+
+p {
+  margin-bottom: 0px;
+}
+.pointer {
+  cursor: pointer;
+}
+.h-40 {
+  height: 40% !important;
+}
+.h-60 {
+  height: 60% !important;
+}
+/* HOME PAGE */
+.heaer-bg {
+  background-image: url("../images/digi-banner-2.png");
+  background-color: #2d3436;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid black;
+  height: 85vh;
+}
+.nav-list li {
+  position: relative;
+  padding: 0px 3px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.nav-list li:after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  background-color: #e84393;
+  width: 0%;
+  left: 0px;
+  bottom: -5px;
+  transition: 0.4s all;
+}
+.nav-list li:hover:after {
+  width: 100%;
+}
+
+/* section of HEADER */
+.vertical-text {
+  font-size: 1.2rem;
+}
+
+/* SIDE BAR */
+.side-menu-open {
+  display: none;
+}
+.side-bar-box {
+  display: block;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  left: -300px;
+  width: 300px;
+  height: 100vh;
+  background-color: aliceblue;
+  transition: 0.7s;
+}
+.active-side-bar {
+  left: 0px;
+}
+.side-menu-list {
+  width: 80%;
+  margin: 0px auto;
+}
+.side-menu-list li {
+  font-size: 20px;
+  padding: 10px 0px;
+  border-bottom: solid 2px #e84393;
+  transition: 0.5s;
+}
+.side-menu-list li:hover {
+  background-color: aquamarine;
+}
+
+/* Section PROJECTS */
+.projects-box {
+  min-height: 45vh;
+}
+.view-more:hover {
+  color: aquamarine !important;
+  cursor: pointer;
+}
+.view-more i {
+  transition: 0.5s;
+  opacity: 0%;
+}
+.view-more:hover i {
+  opacity: 100%;
+  transform: rotate(-90deg);
+}
+.card-item-body {
+  height: 14rem;
+  width: 16rem;
+  background-color: white;
+}
+/*==> Every card has a different background color */
+.card-top-1 {
+  background-image: linear-gradient(45deg, #e84393, #d63031);
+}
+.card-top-2 {
+  background-image: linear-gradient(45deg, #0abde3, #10ac84);
+}
+.card-top-3 {
+  background-image: linear-gradient(45deg, #f368e0, #ff9f43);
+}
+.card-top-4 {
+  background-image: linear-gradient(45deg, #3c6382, #38ada9);
+}
+.card-bottom {
+  position: relative;
+  overflow-y: hidden;
+  background-color: #dff9fb;
+}
+
+.card-bottom div {
+  background-color: #dcdde1;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  bottom: -100%;
+  transition: bottom 0.6s;
+}
+.card-bottom:hover div {
+  bottom: 0%;
+}
+
+/* skill & qualification */
+.skill-box {
+  min-height: 50vh;
+}

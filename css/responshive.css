@@ -1,0 +1,28 @@
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* HOME PAGE */
+  .heaer-bg {
+    background-size: 100% 100%;
+    background-position: center;
+    height: 50vh;
+  }
+  /* section of HEADER */
+  .vertical-text {
+    font-size: 0.6rem;
+    letter-spacing: 0px;
+  }
+  .vertical-text span {
+    font-size: 0.9rem;
+  }
+  .auto-type-box {
+    height: 48vh;
+  }
+  /* SIDE BAR */
+  .side-menu-open {
+    display: block;
+  }
+  /* Section PROJECTS */
+  .card-item-body {
+    height: 15rem;
+    width: 20rem;
+  }
+}
