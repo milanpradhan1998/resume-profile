@@ -14,7 +14,7 @@
     font-size: 0.9rem;
   }
   .auto-type-box {
-    height: 48vh;
+    height: 100%;
   }
   /* SIDE BAR */
   .side-menu-open {
@@ -28,5 +28,13 @@
   /* skill & qualification */
   .cert-mod-img {
     height: 16rem;
+  }
+}
+
+/* RESPONSIVE FOR 16:9 DISPLAY RATIO DEVICE */
+@media only screen and (min-device-width: 390px) and (max-device-width: 915px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* HOME PAGE */
+  .header-bg {
+    height: 40vh;
   }
 }

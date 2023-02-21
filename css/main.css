@@ -58,12 +58,12 @@ p {
 }
 /* HOME PAGE */
 .header-bg {
-  background-image: url("../images/digi-banner-2.png");
+  background-image: url("../images/Frame\ v3.png");
   background-color: #2d3436;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height: 85vh;
 }
 .nav-list li {
