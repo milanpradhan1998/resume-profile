@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="./images/icon/processor.png" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- main.css -->
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/responshive.css" />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="container-fluid p-0">
+      <section>
+        <header class="col-lg-10 col-12 m-auto main-bg-dark">
+          <!-- Nav bar -->
+          <div
+            class="d-flex justify-content-lg-between text-white border-bottom border-1 border-secondary"
+          >
+            <div class="col-6 d-flex">
+              <button
+                class="ms-2 px-2 py-1 bg-transparent border border-0 text-white-50 my-auto side-menu-open"
+                value="open"
+                onclick="activeSideBar()"
+              >
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <img
+                src="./images/digiroot-icon-11.png"
+                style="height: 50px; width: 120px"
+              />
+              <!-- <p class="ms-2 fs-4">Digiroot.in</p> -->
+            </div>
+            <div class="col-6 d-lg-block my-auto d-md-block d-none">
+              <ul class="list-unstyled d-flex m-0 my-auto nav-list">
+                <a href="/"><li class="me-4">Home</li></a>
+                <a href="/projects.html"><li class="me-4">Projects</li></a>
+                <a href="/about.html"><li class="me-4">About</li></a>
+                <a href="/contact.html"><li class="me-4">Contact</li></a>
+              </ul>
+            </div>
+          </div>
+          <!-- Nav bar END -->
+          <!-- side bar -->
+          <aside class="side-bar-box" id="side-bar-box">
+            <div>
+              <div class="d-flex justify-content-between py-3 px-1">
+                <img
+                  class="bg-dark"
+                  src="./images/digiroot-icon-11.png"
+                  style="height: 50px; width: 120px"
+                />
+                <button
+                  class="p-2 bg-transparent border border-0"
+                  onclick="closeSideBar()"
+                >
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+              <div>
+                <ul class="list-unstyled side-menu-list">
+                  <a href="/"><li class="me-4">Home</li></a>
+                  <a href="/projects.html"><li class="me-4">Projects</li></a>
+                  <a href="/about.html"><li class="me-4">About</li></a>
+                  <a href="/contact.html"><li class="me-4">Contact</li></a>
+                </ul>
+              </div>
+            </div>
+          </aside>
+        </header>
+      </section>
+      <!-- about -->
+      <section>
+        <div class="col-12 col-lg-10 m-auto main-bg-dark py-3 px-3 mt-2">
+          <div>
+            <h3 class="main-pink">About MERN development.</h3>
+          </div>
+          <div>
+            <p class="text-white" style="text-align: justify">
+              MERN full stack web development is a popular approach to building
+              dynamic and scalable web applications. MERN stands for MongoDB,
+              Express.js, React.js, and Node.js, and is a combination of
+              open-source technologies that allow developers to create
+              feature-rich web applications from scratch. A MERN developer is a
+              professional who has expertise in all these technologies and can
+              design, develop, and deploy web applications using them. MongoDB
+              is a NoSQL database that stores data in a document format, while
+              Express.js is a server-side framework that allows developers to
+              build APIs and web applications. React.js is a front-end
+              JavaScript library that enables developers to create dynamic and
+              interactive user interfaces, and Node.js is a server-side
+              JavaScript runtime environment that allows developers to run
+              JavaScript code outside of a web browser. Being a MERN full stack
+              web developer requires knowledge and experience in all of these
+              technologies, as well as an understanding of web development best
+              practices and modern software engineering principles. The demand
+              for MERN developers is high, as more and more businesses are
+              turning to web applications to solve complex problems and
+              streamline their operations.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="mt-auto text-white main-bg-dark">
+      <div
+        class="footer-box main-bg-dark col-12 d-flex flex-column flex-lg-row justify-content- lg-between justify-content-center"
+      >
+        <!-- Icon and coat -->
+        <div class="col-11 col-lg-3 p-2">
+          <div>
+            <img
+              src="./images/digiroot-icon-11.png"
+              style="height: 5rem; width: 11rem"
+            />
+          </div>
+          <div>
+            <p class="fs-4">
+              "Your impression is enhanced by a well-designed website."
+            </p>
+          </div>
+        </div>
+        <!-- imp links -->
+        <div class="col-11 col-lg-3 p-2">
+          <div style="height: 5rem">
+            <p class="fs-4 fw-bold">Important Links</p>
+          </div>
+          <div>
+            <ul>
+              <li>Home</li>
+              <li>Projects</li>
+              <li>Contacts</li>
+              <li>More</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Social media -->
+        <div class="col-11 col-lg-3 p-2 mb-2">
+          <div style="height: 5rem">
+            <p class="fs-4 fw-bold">Social media</p>
+          </div>
+          <div class="d-flex justify-content-around">
+            <p
+              class="me-2 border rounded-circle border-white border-2 d-flex justify-content-center align-items-center"
+              style="height: 40px; width: 40px; font-size: 22px"
+            >
+              <i class="my-auto fa-brands fa-github"></i>
+            </p>
+            <p
+              class="me-2 border rounded-circle border-white border-2 d-flex justify-content-center align-items-center"
+              style="height: 40px; width: 40px; font-size: 22px"
+            >
+              <i class="my-auto fa-brands fa-linkedin"></i>
+            </p>
+            <p
+              class="me-2 border rounded-circle border-white border-2 d-flex justify-content-center align-items-center"
+              style="height: 40px; width: 40px; font-size: 22px"
+            >
+              <i class="my-auto fa-brands fa-facebook"></i>
+            </p>
+            <p
+              class="me-2 border rounded-circle border-white border-2 d-flex justify-content-center align-items-center"
+              style="height: 40px; width: 40px; font-size: 22px"
+            >
+              <i class="my-auto fa-brands fa-square-instagram"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-auto py-2 col-11 mx-auto border-top border-2 border-white">
+        <p class="font-monospace text-center">
+          Made with <i class="fa-solid fa-heart main-pink"></i>
+          By Gulshan.
+          <span> All rights Reserved. </span>
+        </p>
+        <p class="text-center text-secondary">
+          <a
+            href="https://www.flaticon.com/free-icons/home-button"
+            title="home button icons"
+            >Icons created - Flaticon</a
+          >
+        </p>
+      </div>
+    </footer>
+    <!-- BOOTSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <!-- AUTO TYPE JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./js/typed.js"></script>
+    <!-- main js -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
