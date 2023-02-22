@@ -16,7 +16,7 @@ function sendEmail() {
       Username: "milanpradhan1998@gmail.com",
       Password: "C8AF4D25021BE54BC51D71FF685166F77FA8",
       // Password: "milan@768028",
-      To: "milanpradhan.26.11.1998@gmail.com", //which id you want to send the mail
+      To: "milanpradhan1998@gmail.com", //which id you want to send the mail
       From: "milanpradhan1998@gmail.com", //this email which is register with elastic mail
       Subject: "This is the subject",
       Body: content,
